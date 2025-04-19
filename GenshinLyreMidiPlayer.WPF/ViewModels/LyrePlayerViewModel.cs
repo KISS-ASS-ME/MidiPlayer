@@ -198,7 +198,7 @@ public class LyrePlayerViewModel : Screen,
                 WindowHelper.EnsureGameOnTop();
                 await Task.Delay(100);
 
-                if (WindowHelper.IsGameFocused())
+                if (WindowHelper.IsForegroundWindow())
                 {
                     Playback.PlaybackStart = Playback.GetCurrentTime(TimeSpanType.Midi);
                     Playback.Start();
@@ -488,7 +488,8 @@ public class LyrePlayerViewModel : Screen,
             return;
         }
 
-        if (!WindowHelper.IsGameFocused())
+        // Allow playback in any window
+        if (!Settings.AllowBackgroundPlayback && !WindowHelper.IsForegroundWindow())
         {
             Playback?.Stop();
             return;
