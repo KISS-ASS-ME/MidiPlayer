@@ -1,0 +1,72 @@
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+PS C:\Users\Conaninw\Downloads\MidiPlayer>
+PS C:\Users\Conaninw\Downloads\MidiPlayer> dotnet run --project GenshinLyreMidiPlayer.WPF
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701:  'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFrameworon=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Versi.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible wit
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701:  'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFrameworon=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Versi.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible wit
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF_m1vaql3l_wpftmp.csproj :  NU1701: Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6TFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NEork,Version=v4.8.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fulltible with your project.
+MSBUILD : warning FodyPackageReference: Fody: The package reference for PropertyChanged.Fody does not contain Privat='All'
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\ViewModels\PlaylistViewModel.cs(174,5,174,6): warnidy/PropertyChanged: Unsupported signature for a On_PropertyName_Changed method: OnFileChanged in GenshinLyreMidiPlayViewModels.PlaylistViewModel. You can suppress this warning with [SuppressPropertyChangedWarnings].
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\ViewModels\SettingsPageViewModel.cs(321,5,321,6): w
+: Fody/PropertyChanged: Type GenshinLyreMidiPlayer.WPF.ViewModels.SettingsPageViewModel contains a method OnThemeChaich will not be called as Theme is not found. You can suppress this warning with [SuppressPropertyChangedWarnings]. 
+ SelectedInstrumentIndex is not found. You can suppress this warning with [SuppressPropertyChangedWarnings].
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\ViewModels\SettingsPageViewModel.cs(16707566-16707566): warning : Fody/PropertyChanged: Type GenshinLyreMidiPlayer.WPF.ViewModels.SettingsPageViewModel contains a method OnSelectedLayoutIndexChanged which will not be called as SelectedLayoutIndex is not found. You can suppress this warning with [SuppressPropertyChangedWarnings].
+PS C:\Users\Conaninw\Downloads\MidiPlayer> git pull origin main
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 12 (delta 8), reused 12 (delta 8), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 2.15 KiB | 40.00 KiB/s, done.
+From https://github.com/KISS-ASS-ME/MidiPlayer
+ * branch            main       -> FETCH_HEAD
+Updating d04c314..5980534
+Fast-forward
+ .replit                                           | 8 ++++++++
+ GenshinLyreMidiPlayer.Data/Properties/Settings.cs | 5 +++--
+ GenshinLyreMidiPlayer.WPF/Core/LyrePlayer.cs      | 3 ++-
+ GenshinLyreMidiPlayer.WPF/Core/WindowHelper.cs    | 2 +-
+ 4 files changed, 14 insertions(+), 4 deletions(-)
+ create mode 100644 .replit
+PS C:\Users\Conaninw\Downloads\MidiPlayer> dotnet run --project GenshinLyreMidiPlayer.WPF
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701: Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible with your 
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701: Packageon=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible with your 
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.Data\Properties\Settings.cs(24,1): error CS1519: Invalid token '}' in class, record, struct, or interface member declaration
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.Data\Properties\Settings.cs(25,59): error CS1513: } expected  
+
+The build failed. Fix the build errors and run again.
+PS C:\Users\Conaninw\Downloads\MidiPlayer> git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.72 KiB | 103.00 KiB/s, done.
+ * branch            main       -> FETCH_HEAD
+   5980534..2ae33e3  main       -> origin/main
+Updating 5980534..2ae33e3
+Fast-forward
+ ...ownloads-MidiPlayer-PS-C-User-1745080779360.txt | 42 ++++++++++++++++++++++
+ 1 file changed, 42 insertions(+)
+ create mode 100644 attached_assets/Pasted--PS-C-Users-Conaninw-Downloads-MidiPlayer-PS-C-Users-Conaninw-Downloads-MidiPlayer-PS-C-User-1745080779360.txt
+PS C:\Users\Conaninw\Downloads\MidiPlayer> dotnet run --project GenshinLyreMidiPlayer.WPF
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701: Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible with your 
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.WPF\GenshinLyreMidiPlayer.WPF.csproj : warning NU1701: Package 'InputSimulator 1.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows10.0.22621'. This package may not be fully compatible with your 
+project.
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.Data\Properties\Settings.cs(24,1): error CS1519: Invalid token '}' in class, record, struct, or interface member declaration
+C:\Users\Conaninw\Downloads\MidiPlayer\GenshinLyreMidiPlayer.Data\Properties\Settings.cs(25,59): error CS1513: } expected  
+
+The build failed. Fix the build errors and run again.
+PS C:\Users\Conaninw\Downloads\MidiPlayer> 
