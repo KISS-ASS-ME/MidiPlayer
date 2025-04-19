@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Configuration;
 
 namespace GenshinLyreMidiPlayer.Data.Properties;
@@ -22,3 +22,4 @@ public sealed partial class Settings
         }
     }
 }
+public bool AllowBackgroundPlayback { get; set; } = false;

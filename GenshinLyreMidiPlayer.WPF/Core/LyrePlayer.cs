@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using GenshinLyreMidiPlayer.Data.Entities;
@@ -11,6 +11,7 @@ namespace GenshinLyreMidiPlayer.WPF.Core;
 public static class LyrePlayer
 {
     private static readonly IInputSimulator Input = new InputSimulator();
+private static bool allowBackgroundPlayback = true; // Add background playback control
 
     public static int TransposeNote(
         Instrument instrument, ref int noteId,
