@@ -1,25 +1,28 @@
-using System.ComponentModel;
+
 using System.Configuration;
 
-namespace GenshinLyreMidiPlayer.Data.Properties;
-
-// This class allows you to handle specific events on the settings class:
-//  The SettingChanging event is raised before a setting's value is changed.
-//  The PropertyChanged event is raised after a setting's value is changed.
-//  The SettingsLoaded event is raised after the setting values are loaded.
-//  The SettingsSaving event is raised before the setting values are saved.
-public sealed partial class Settings
+namespace GenshinLyreMidiPlayer.Data.Properties
 {
-    protected override void OnPropertyChanged(object sender, PropertyChangedEventArgs e) => Save();
-
-    protected override void OnSettingsLoaded(object sender, SettingsLoadedEventArgs e)
+    public class Settings : ApplicationSettingsBase
     {
-        if (Default.UpgradeRequired)
+        private static Settings? defaultInstance;
+
+        public static Settings Default
         {
-            Default.Upgrade();
-            Default.UpgradeRequired = false;
-            Default.Save();
+            get
+            {
+                return defaultInstance ??= (Settings)Synchronized(new Settings());
+            }
         }
+
+        public bool AllowBackgroundPlayback { get; set; } = false;
+        
+        public bool HoldNotes { get; set; } = false;
+        
+        public bool MergeNotes { get; set; } = false;
+        
+        public bool TransposeNotes { get; set; } = true;
+        
+        public bool UseSpeakers { get; set; } = false;
     }
 }
-public bool AllowBackgroundPlayback { get; set; } = false;
